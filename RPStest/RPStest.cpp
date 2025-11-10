@@ -33,5 +33,16 @@ namespace RPStest
 			Assert::AreEqual("Invalid", result);
 		}
 
+		TEST_METHOD(Player2Invalid)
+		{
+			//player 2 inputs invalid input
+			char player1[] = { "rock" };
+			char player2[] = { "WOW" };
+
+			char* result = winnerCheck(player1, player2);
+
+			Assert::AreEqual("Invalid", result);
+		}
+
 	};
 }
