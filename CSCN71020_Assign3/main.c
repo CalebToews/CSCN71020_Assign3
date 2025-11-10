@@ -11,6 +11,10 @@ int main() {
 
 char* winnerCheck(char player1[], char player2[]) {
 
+	if (!(strcmp(player1, "rock") == 0 || strcmp(player1, "scissor") == 0 || strcmp(player1, "paper") == 0)) {
+		return "Invalid";
+	}
+
 	if (strcmp(player1, player2) == 0) {
 		return "Draw";
 	}
