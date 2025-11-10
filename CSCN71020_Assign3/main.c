@@ -21,4 +21,12 @@ char* winnerCheck(char player1[], char player2[]) {
 		return "Draw";
 	}
 
+	if (strcmp(player1, "rock") == 0) {
+		if (strcmp(player2, "scissor") == 0) {
+			return "Player1";
+		}
+	}
+
+
+
 }
