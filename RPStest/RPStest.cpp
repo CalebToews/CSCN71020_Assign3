@@ -66,5 +66,16 @@ namespace RPStest
 			Assert::AreEqual("Player1", result);
 		}
 
+		TEST_METHOD(Player1WinScissor)
+		{
+			// Player 1 wins with scissor
+			char player1[] = { "scissor" };
+			char player2[] = { "paper" };
+
+			char* result = winnerCheck(player1, player2);
+
+			Assert::AreEqual("Player1", result);
+		}
+
 	};
 }
