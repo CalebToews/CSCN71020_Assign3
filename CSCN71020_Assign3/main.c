@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "main.h"
 
 int main() {
@@ -10,6 +11,8 @@ int main() {
 
 char* winnerCheck(char player1[], char player2[]) {
 
-
+	if (strcmp(player1, player2) == 0) {
+		return "Draw";
+	}
 
 }
